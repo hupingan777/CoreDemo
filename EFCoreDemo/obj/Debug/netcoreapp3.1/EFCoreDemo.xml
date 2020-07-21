@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>EFCoreDemo</name>
+    </assembly>
+    <members>
+        <member name="T:EFCoreDemo.Controllers.UserMainController">
+            <summary>
+            用户管理
+            </summary>
+        </member>
+        <member name="M:EFCoreDemo.Controllers.UserMainController.#ctor(Demo.Data.MyDBContext)">
+            <summary>
+            构造
+            </summary>
+            <param name="myDBContext"></param>
+        </member>
+        <member name="M:EFCoreDemo.Controllers.UserMainController.GetAllUsers">
+            <summary>
+            获取所有用户
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:EFCoreDemo.Controllers.UserMainController.GetUserById(System.Int32)">
+            <summary>
+            根据Id获取用户
+            </summary>
+            <param name="userId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:EFCoreDemo.Controllers.UserMainController.AddOrEditUser(Demo.Domain.UserMain)">
+            <summary>
+            用户添加或者修改
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

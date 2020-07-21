@@ -1,0 +1,8 @@
+E:\MyProject\EFCoreDemo\Demo.Domain\bin\Debug\netstandard2.0\Demo.Domain.deps.json
+E:\MyProject\EFCoreDemo\Demo.Domain\bin\Debug\netstandard2.0\Demo.Domain.dll
+E:\MyProject\EFCoreDemo\Demo.Domain\bin\Debug\netstandard2.0\Demo.Domain.pdb
+E:\MyProject\EFCoreDemo\Demo.Domain\obj\Debug\netstandard2.0\Demo.Domain.csprojAssemblyReference.cache
+E:\MyProject\EFCoreDemo\Demo.Domain\obj\Debug\netstandard2.0\Demo.Domain.AssemblyInfoInputs.cache
+E:\MyProject\EFCoreDemo\Demo.Domain\obj\Debug\netstandard2.0\Demo.Domain.AssemblyInfo.cs
+E:\MyProject\EFCoreDemo\Demo.Domain\obj\Debug\netstandard2.0\Demo.Domain.dll
+E:\MyProject\EFCoreDemo\Demo.Domain\obj\Debug\netstandard2.0\Demo.Domain.pdb
