@@ -1,9 +1,11 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
 namespace Demo.Domain
 {
+    /// <summary>
+    /// 角色
+    /// </summary>
     public class RoleMain
     {
         /// <summary>

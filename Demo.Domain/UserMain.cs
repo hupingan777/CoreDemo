@@ -1,9 +1,11 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
 namespace Demo.Domain
 {
+    /// <summary>
+    /// 用户
+    /// </summary>
     public class UserMain
     {
         /// <summary>
