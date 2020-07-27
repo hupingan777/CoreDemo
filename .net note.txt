@@ -1,0 +1,22 @@
+JsonIgnore:在类属性上添加后webapi不会返回给前端
+
+在类属性上加[Ignore]表示“忽略此成员进行配置验证，并在映射期间跳过”
+
+Substring:去除指定范围的字符串
+
+IEnumerable<IGrouping<string, Student>> studentGroup = studentList.GroupBy(x => x.ClassName); //.net 的分组，只需要循环studentGroup即可，通过item取：item.key、item.ToList()(key对应的集合)
+
+在Web Api的Action上添加“[NonAction]”特性，则该方法不会作为公共Api使用。
+
+Web Api的路由：
+		（1）[HttpGet("{id}")]，id会附着在匹配路由当中，如：http://localhost:5000/api/User/TemplateTest/37，不加37会报404
+		（2）[HttpGet("{id?}")]，“?”表示可选，id可要可不要，如：http://localhost:5000/api/User/TemplateTest/37，不加37不会报404
+		（3）[HttpGet("{id:int}")]，“:int”模板的部分将 id 路由值限制为可以转换为整数的字符串，如：/api/User/TemplateTest/abc，则会报错404错误
+
+RequestDto请求属性使用正则：[RegularExpression(@"^[A-Za-z\d]{1,50}$", ErrorMessage = "物流单号只能输入数字和英文字母,且长度不能超过50")]
+
+EntityFramework Core：在修改某个实体时，会针对该实体创建实体快照，从而追踪实体。调用SaveChanges方法时将所有的修改提交到数据库，如果单单只                      是查询则没必要跟踪实体，可以添加AsNoTracking方法取消实体跟踪，以提升性能
+
+sql server把查询的某列按逗号分隔拼接:stuff((select ','+ UserName from UserMain where UserName is not null and LEN(UserName)>0 For xml                                       path('')),1,1,'')
+                                  
+					说明：stuff('str1',1,1,'str2')函数表示把第一个参数从哪个位置开始，删除多少长度，最后将指定字符串插					      入删除的位置
