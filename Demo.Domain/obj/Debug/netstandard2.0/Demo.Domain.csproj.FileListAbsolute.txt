@@ -17,3 +17,14 @@ F:\HPA\NetCore\CoreDemo\Demo.Domain\obj\Debug\netstandard2.0\Demo.Domain.dll
 F:\HPA\NetCore\CoreDemo\Demo.Domain\obj\Debug\netstandard2.0\Demo.Domain.pdb
 F:\HPA\NetCore\CoreDemo\Demo.Domain\bin\Debug\netstandard2.0\Demo.Domain.xml
 F:\HPA\NetCore\CoreDemo\Demo.Domain\obj\Debug\netstandard2.0\Demo.Domain.xml
+F:\HPA\NetCore\CoreDemo\CoreDemo\Demo.Domain\bin\Debug\netstandard2.0\Demo.Domain.deps.json
+F:\HPA\NetCore\CoreDemo\CoreDemo\Demo.Domain\bin\Debug\netstandard2.0\Demo.Domain.dll
+F:\HPA\NetCore\CoreDemo\CoreDemo\Demo.Domain\bin\Debug\netstandard2.0\Demo.Domain.pdb
+F:\HPA\NetCore\CoreDemo\CoreDemo\Demo.Domain\bin\Debug\netstandard2.0\Demo.Domain.xml
+F:\HPA\NetCore\CoreDemo\CoreDemo\Demo.Domain\obj\Debug\netstandard2.0\Demo.Domain.csprojAssemblyReference.cache
+F:\HPA\NetCore\CoreDemo\CoreDemo\Demo.Domain\obj\Debug\netstandard2.0\Demo.Domain.csproj.CoreCompileInputs.cache
+F:\HPA\NetCore\CoreDemo\CoreDemo\Demo.Domain\obj\Debug\netstandard2.0\Demo.Domain.AssemblyInfoInputs.cache
+F:\HPA\NetCore\CoreDemo\CoreDemo\Demo.Domain\obj\Debug\netstandard2.0\Demo.Domain.AssemblyInfo.cs
+F:\HPA\NetCore\CoreDemo\CoreDemo\Demo.Domain\obj\Debug\netstandard2.0\Demo.Domain.dll
+F:\HPA\NetCore\CoreDemo\CoreDemo\Demo.Domain\obj\Debug\netstandard2.0\Demo.Domain.xml
+F:\HPA\NetCore\CoreDemo\CoreDemo\Demo.Domain\obj\Debug\netstandard2.0\Demo.Domain.pdb
