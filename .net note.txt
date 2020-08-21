@@ -20,3 +20,4 @@ EntityFramework Core：在修改某个实体时，会针对该实体创建实体快照，从而追踪实体。
 sql server把查询的某列按逗号分隔拼接:stuff((select ','+ UserName from UserMain where UserName is not null and LEN(UserName)>0 For xml                                       path('')),1,1,'')
                                   
 					说明：stuff('str1',1,1,'str2')函数表示把第一个参数从哪个位置开始，删除多少长度，最后将指定字符串插					      入删除的位置
+.net中对参数编码和解码方法：HttpUtility.UrlEncode（编码）、HttpUtility.UrlDecode（解码）
