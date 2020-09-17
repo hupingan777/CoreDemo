@@ -46,6 +46,10 @@ namespace EFCoreDemo.Controllers
                 userMain.CreateTime = DateTime.Now;
                 userMain.RoleId = 0;
 
+                //参数也可能是这种：string postData = "SystemCoding=" + systemCoding + "&ts=" + timestamp + "&TemplateCode=" + templateCode
+                //                     +"&TemplateParam=" + templateParam + "&PhoneNumbers=" + phoneNumbers;
+                //ContentType：application/x-www-form-urlencoded
+
                 var contentStr = Newtonsoft.Json.JsonConvert.SerializeObject(userMain);
 
                 var sc = new StringContent(contentStr, Encoding.UTF8, "application/json");

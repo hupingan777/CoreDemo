@@ -6282,11 +6282,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\HPA\\NetCore\\CoreDemo\\CoreDemo\\Demo.Data\\Demo.Data.csproj",
+      "projectUniqueName": "F:\\HPA\\NetCore\\CoreDemo\\Demo.Data\\Demo.Data.csproj",
       "projectName": "Demo.Data",
-      "projectPath": "F:\\HPA\\NetCore\\CoreDemo\\CoreDemo\\Demo.Data\\Demo.Data.csproj",
+      "projectPath": "F:\\HPA\\NetCore\\CoreDemo\\Demo.Data\\Demo.Data.csproj",
       "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-      "outputPath": "F:\\HPA\\NetCore\\CoreDemo\\CoreDemo\\Demo.Data\\obj\\",
+      "outputPath": "F:\\HPA\\NetCore\\CoreDemo\\Demo.Data\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -6305,8 +6305,8 @@
       "frameworks": {
         "netstandard2.0": {
           "projectReferences": {
-            "F:\\HPA\\NetCore\\CoreDemo\\CoreDemo\\Demo.Domain\\Demo.Domain.csproj": {
-              "projectPath": "F:\\HPA\\NetCore\\CoreDemo\\CoreDemo\\Demo.Domain\\Demo.Domain.csproj"
+            "F:\\HPA\\NetCore\\CoreDemo\\Demo.Domain\\Demo.Domain.csproj": {
+              "projectPath": "F:\\HPA\\NetCore\\CoreDemo\\Demo.Domain\\Demo.Domain.csproj"
             }
           }
         }
@@ -6347,7 +6347,7 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
       }
     }
   }
