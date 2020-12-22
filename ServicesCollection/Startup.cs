@@ -20,11 +20,21 @@ namespace ServicesCollection
 {
     public class Startup
     {
-        public Startup(IConfiguration configuration)
+        public Startup(IWebHostEnvironment env)
         {
+
+            //// In ASP.NET Core 3.0 `env` will be an IWebHostEnvironment, not IHostingEnvironment.
+            //var builder = new ConfigurationBuilder()
+            //    .SetBasePath(env.ContentRootPath)
+            //    .AddJsonFile("appsettings.json", optional: true, reloadOnChange: true)
+            //    .AddJsonFile($"appsettings.{env.EnvironmentName}.json", optional: true)
+            //    .AddEnvironmentVariables();
+            //this.Configuration = builder.Build();
+
             Configuration = configuration;
         }
 
+        //public IConfigurationRoot Configuration { get; private set; }
         public IConfiguration Configuration { get; }
 
         // This method gets called by the runtime. Use this method to add services to the container.
@@ -64,9 +74,9 @@ namespace ServicesCollection
 
         public void ConfigureContainer(ContainerBuilder builder)
         {
-            builder.RegisterAssemblyTypes(typeof(Program).Assembly).
-                    Where(x => x.Name.EndsWith("ServicesCollection", StringComparison.OrdinalIgnoreCase)).AsImplementedInterfaces();
-            builder.RegisterDynamicProxy();
+            //builder.RegisterAssemblyTypes(typeof(Program).Assembly).
+            //        Where(x => x.Name.EndsWith("ServicesCollection", StringComparison.OrdinalIgnoreCase)).AsImplementedInterfaces();
+            //builder.RegisterDynamicProxy();
 
             var assemblys = Assembly.Load("ServicesCollection");//Service是继承接口的实现方法类库名称
             var baseType = typeof(IDependency);//IDependency 是一个接口（所有要实现依赖注入的借口都要继承该接口）
