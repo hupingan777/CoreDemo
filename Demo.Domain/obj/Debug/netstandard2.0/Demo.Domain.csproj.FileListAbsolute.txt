@@ -28,3 +28,13 @@ F:\HPA\NetCore\CoreDemo\CoreDemo\Demo.Domain\obj\Debug\netstandard2.0\Demo.Domai
 F:\HPA\NetCore\CoreDemo\CoreDemo\Demo.Domain\obj\Debug\netstandard2.0\Demo.Domain.dll
 F:\HPA\NetCore\CoreDemo\CoreDemo\Demo.Domain\obj\Debug\netstandard2.0\Demo.Domain.xml
 F:\HPA\NetCore\CoreDemo\CoreDemo\Demo.Domain\obj\Debug\netstandard2.0\Demo.Domain.pdb
+F:\HPA\MyToolProgram\CoreDemo\Demo.Domain\bin\Debug\netstandard2.0\Demo.Domain.deps.json
+F:\HPA\MyToolProgram\CoreDemo\Demo.Domain\bin\Debug\netstandard2.0\Demo.Domain.dll
+F:\HPA\MyToolProgram\CoreDemo\Demo.Domain\bin\Debug\netstandard2.0\Demo.Domain.pdb
+F:\HPA\MyToolProgram\CoreDemo\Demo.Domain\bin\Debug\netstandard2.0\Demo.Domain.xml
+F:\HPA\MyToolProgram\CoreDemo\Demo.Domain\obj\Debug\netstandard2.0\Demo.Domain.AssemblyInfoInputs.cache
+F:\HPA\MyToolProgram\CoreDemo\Demo.Domain\obj\Debug\netstandard2.0\Demo.Domain.AssemblyInfo.cs
+F:\HPA\MyToolProgram\CoreDemo\Demo.Domain\obj\Debug\netstandard2.0\Demo.Domain.csproj.CoreCompileInputs.cache
+F:\HPA\MyToolProgram\CoreDemo\Demo.Domain\obj\Debug\netstandard2.0\Demo.Domain.dll
+F:\HPA\MyToolProgram\CoreDemo\Demo.Domain\obj\Debug\netstandard2.0\Demo.Domain.xml
+F:\HPA\MyToolProgram\CoreDemo\Demo.Domain\obj\Debug\netstandard2.0\Demo.Domain.pdb

@@ -8978,7 +8978,6 @@
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
       "Demo.Data >= 1.0.0",
-      "Demo.Domain >= 1.0.0",
       "Microsoft.EntityFrameworkCore.SqlServer >= 3.1.6",
       "Microsoft.EntityFrameworkCore.Tools >= 3.1.6",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 3.1.4",
@@ -8996,11 +8995,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\HPA\\NetCore\\CoreDemo\\EFCoreDemo\\EFCoreDemo.csproj",
+      "projectUniqueName": "F:\\HPA\\MyToolProgram\\CoreDemo\\EFCoreDemo\\EFCoreDemo.csproj",
       "projectName": "EFCoreDemo",
-      "projectPath": "F:\\HPA\\NetCore\\CoreDemo\\EFCoreDemo\\EFCoreDemo.csproj",
+      "projectPath": "F:\\HPA\\MyToolProgram\\CoreDemo\\EFCoreDemo\\EFCoreDemo.csproj",
       "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-      "outputPath": "F:\\HPA\\NetCore\\CoreDemo\\EFCoreDemo\\obj\\",
+      "outputPath": "F:\\HPA\\MyToolProgram\\CoreDemo\\EFCoreDemo\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -9019,11 +9018,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "F:\\HPA\\NetCore\\CoreDemo\\Demo.Data\\Demo.Data.csproj": {
-              "projectPath": "F:\\HPA\\NetCore\\CoreDemo\\Demo.Data\\Demo.Data.csproj"
-            },
-            "F:\\HPA\\NetCore\\CoreDemo\\Demo.Domain\\Demo.Domain.csproj": {
-              "projectPath": "F:\\HPA\\NetCore\\CoreDemo\\Demo.Domain\\Demo.Domain.csproj"
+            "F:\\HPA\\MyToolProgram\\CoreDemo\\Demo.Data\\Demo.Data.csproj": {
+              "projectPath": "F:\\HPA\\MyToolProgram\\CoreDemo\\Demo.Data\\Demo.Data.csproj"
             }
           }
         }

@@ -88,7 +88,7 @@ namespace EFCoreDemo.Controllers
         [HttpPost]
         public async Task<IActionResult> GetTokenTest(UserLoginReqDto model)
         {
-            var url = "http://app.yundingdan.com.cn/api/services/app/userMain/Login";
+            var url = "http://appapi.yundingdan.com.cn/api/services/app/userMain/Login";
             //string param = @"{\"userName\": \""13527330751\"",\""password\"": \""e10adc3949ba59abbe56e057f20f883e\"",\""userBranchId\"": 1711181900438064,\""channelId\"": \""4033753001137996875\""}";
             UserLoginReqDto userLoginReqDto = new UserLoginReqDto();
             userLoginReqDto.UserName = model.UserName;
@@ -116,7 +116,7 @@ namespace EFCoreDemo.Controllers
         [HttpPost]
         public async Task<IActionResult> PostByToken(string token)
         {
-            var url = "http://app.yundingdan.com.cn/api/services/app/branchAddressList/GetBranchAddressList";
+            var url = "http://appapi.yundingdan.com.cn/api/services/app/branchAddressList/GetBranchAddressList";
             StringContent stringContent = new StringContent("", Encoding.UTF8, "application/json");
 
             var client = _httpClientFactory.CreateClient();

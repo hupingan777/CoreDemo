@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "F:\\HPA\\NetCore\\CoreDemo\\Demo.Data\\Demo.Data.csproj": {}
+    "F:\\HPA\\MyToolProgram\\CoreDemo\\Demo.Data\\Demo.Data.csproj": {}
   },
   "projects": {
-    "F:\\HPA\\NetCore\\CoreDemo\\Demo.Data\\Demo.Data.csproj": {
+    "F:\\HPA\\MyToolProgram\\CoreDemo\\Demo.Data\\Demo.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\HPA\\NetCore\\CoreDemo\\Demo.Data\\Demo.Data.csproj",
+        "projectUniqueName": "F:\\HPA\\MyToolProgram\\CoreDemo\\Demo.Data\\Demo.Data.csproj",
         "projectName": "Demo.Data",
-        "projectPath": "F:\\HPA\\NetCore\\CoreDemo\\Demo.Data\\Demo.Data.csproj",
+        "projectPath": "F:\\HPA\\MyToolProgram\\CoreDemo\\Demo.Data\\Demo.Data.csproj",
         "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "F:\\HPA\\NetCore\\CoreDemo\\Demo.Data\\obj\\",
+        "outputPath": "F:\\HPA\\MyToolProgram\\CoreDemo\\Demo.Data\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -30,8 +30,8 @@
         "frameworks": {
           "netstandard2.0": {
             "projectReferences": {
-              "F:\\HPA\\NetCore\\CoreDemo\\Demo.Domain\\Demo.Domain.csproj": {
-                "projectPath": "F:\\HPA\\NetCore\\CoreDemo\\Demo.Domain\\Demo.Domain.csproj"
+              "F:\\HPA\\MyToolProgram\\CoreDemo\\Demo.Domain\\Demo.Domain.csproj": {
+                "projectPath": "F:\\HPA\\MyToolProgram\\CoreDemo\\Demo.Domain\\Demo.Domain.csproj"
               }
             }
           }
@@ -76,14 +76,14 @@
         }
       }
     },
-    "F:\\HPA\\NetCore\\CoreDemo\\Demo.Domain\\Demo.Domain.csproj": {
+    "F:\\HPA\\MyToolProgram\\CoreDemo\\Demo.Domain\\Demo.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\HPA\\NetCore\\CoreDemo\\Demo.Domain\\Demo.Domain.csproj",
+        "projectUniqueName": "F:\\HPA\\MyToolProgram\\CoreDemo\\Demo.Domain\\Demo.Domain.csproj",
         "projectName": "Demo.Domain",
-        "projectPath": "F:\\HPA\\NetCore\\CoreDemo\\Demo.Domain\\Demo.Domain.csproj",
+        "projectPath": "F:\\HPA\\MyToolProgram\\CoreDemo\\Demo.Domain\\Demo.Domain.csproj",
         "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "F:\\HPA\\NetCore\\CoreDemo\\Demo.Domain\\obj\\",
+        "outputPath": "F:\\HPA\\MyToolProgram\\CoreDemo\\Demo.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
