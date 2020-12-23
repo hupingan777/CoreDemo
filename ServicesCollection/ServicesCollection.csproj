@@ -6,12 +6,32 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Tool\RabbitMQ\Dtos\**" />
+    <Content Remove="Tool\RabbitMQ\Dtos\**" />
+    <EmbeddedResource Remove="Tool\RabbitMQ\Dtos\**" />
+    <None Remove="Tool\RabbitMQ\Dtos\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Tool\RabbitMQ\IOrderMessageQueuePublisher.cs" />
+    <Compile Remove="Tool\RabbitMQ\OrderMessageQueueClient.cs" />
+    <Compile Remove="Tool\RabbitMQ\OrderMessageQueueConsumer.cs" />
+    <Compile Remove="Tool\RabbitMQ\OrderMessageQueuePublisher.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="AspectCore.Extensions.Autofac" Version="2.1.0" />
     <PackageReference Include="Autofac" Version="6.1.0" />
     <PackageReference Include="Autofac.Extensions.DependencyInjection" Version="7.1.0" />
     <PackageReference Include="newtonsoft.json" Version="12.0.3" />
     <PackageReference Include="ServiceStack.Redis" Version="5.10.2" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="5.5.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Tool\IP\" />
+    <Folder Include="Tool\RabbitMQ\" />
+    <Folder Include="Tool\DanLi\" />
   </ItemGroup>
 
   <ProjectExtensions><VisualStudio><UserProperties appsettings_1json__JsonSchema="" /></VisualStudio></ProjectExtensions>
