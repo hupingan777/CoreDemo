@@ -20,9 +20,8 @@ namespace ServicesCollection
 {
     public class Startup
     {
-        public Startup(IWebHostEnvironment env)
+        public Startup(IConfiguration configuration) //IWebHostEnvironment env
         {
-
             //// In ASP.NET Core 3.0 `env` will be an IWebHostEnvironment, not IHostingEnvironment.
             //var builder = new ConfigurationBuilder()
             //    .SetBasePath(env.ContentRootPath)
@@ -37,7 +36,11 @@ namespace ServicesCollection
         //public IConfigurationRoot Configuration { get; private set; }
         public IConfiguration Configuration { get; }
 
-        // This method gets called by the runtime. Use this method to add services to the container.
+        /// <summary>
+        /// ConfigureServices is where you register dependencies.
+        /// This gets called by the runtime before the ConfigureContainer method, below.
+        /// </summary>
+        /// <param name="services"></param>
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
@@ -72,6 +75,13 @@ namespace ServicesCollection
 
         }
 
+        /// <summary>
+        /// ConfigureContainer is where you can register things directly with Autofac. 
+        /// This runs after ConfigureServices so the things here will override registrations made in ConfigureServices.
+        /// Don't build the container; that gets done for you by the factory.
+        /// ≈‰÷√≤Œøºµÿ÷∑£∫https://autofaccn.readthedocs.io/zh/latest/integration/aspnetcore.html
+        /// </summary>
+        /// <param name="builder"></param>
         public void ConfigureContainer(ContainerBuilder builder)
         {
             //builder.RegisterAssemblyTypes(typeof(Program).Assembly).

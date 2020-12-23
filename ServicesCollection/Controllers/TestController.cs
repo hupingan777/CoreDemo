@@ -1,11 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.Logging;
 using ServicesCollection.Tool.Cache;
+using System.Collections.Generic;
+using System.Text;
 
 namespace ServicesCollection.Controllers
 {
@@ -14,22 +12,30 @@ namespace ServicesCollection.Controllers
     public class TestController : ControllerBase
     {
         private readonly ICache _cache;
-        private IConfiguration _configuration;
+        private readonly IConfiguration _configuration;
+        private readonly ILogger<TestController> _logger;
 
         public TestController(ICache cache,
-            IConfiguration configuration)
+            IConfiguration configuration,
+            ILogger<TestController> logger)
         {
             _cache = cache;
             _configuration = configuration;
+            _logger = logger;
         }
 
         [Route("GetRedisValues")]
         [HttpGet]
         public string GetRedisValues()
         {
-            var result = _cache.Get().ToString();
-            var configurationResult = _configuration["Logging:LogLevel:Default"].ToString();
-            return result;
+            var result = _cache.GetAllHashKeysAndValues("MyNovel:Author:GetIdByName:");
+            StringBuilder sb = new StringBuilder();
+            foreach (var item in result)
+            {
+                sb.Append($"key:{item.Key},value:{item.Value}");
+            }
+            _logger.LogInformation(sb.ToString());
+            return sb.ToString();
         }
     }
 }
