@@ -6,9 +6,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Tool\GeneralNumber\**" />
     <Compile Remove="Tool\RabbitMQ\Dtos\**" />
+    <Content Remove="Tool\GeneralNumber\**" />
     <Content Remove="Tool\RabbitMQ\Dtos\**" />
+    <EmbeddedResource Remove="Tool\GeneralNumber\**" />
     <EmbeddedResource Remove="Tool\RabbitMQ\Dtos\**" />
+    <None Remove="Tool\GeneralNumber\**" />
     <None Remove="Tool\RabbitMQ\Dtos\**" />
   </ItemGroup>
 

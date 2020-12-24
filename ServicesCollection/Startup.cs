@@ -73,6 +73,8 @@ namespace ServicesCollection
                 x.IncludeXmlComments(xmlPath, true);
             });
 
+            services.AddHttpClient();
+
         }
 
         /// <summary>
