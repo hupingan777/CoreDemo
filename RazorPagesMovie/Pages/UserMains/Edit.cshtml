@@ -1,0 +1,69 @@
+﻿@page
+@model RazorPagesMovie.Pages.UserMains.EditModel
+@{
+    ViewData["Title"] = "用户编辑";
+}
+
+<h1>编辑</h1>
+
+<h4>用户</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="UserMain.UserName" class="control-label"></label>
+                <input asp-for="UserMain.UserName" class="form-control" id="UserName" />
+                <span asp-validation-for="UserMain.UserName" class="text-danger"></span>
+
+                <label asp-for="UserMain.UserLoginName" class="control-label"></label>
+                <input asp-for="UserMain.UserLoginName" class="form-control" />
+                <span asp-validation-for="UserMain.UserLoginName" class="text-danger"></span>
+
+                <label asp-for="UserMain.Password" class="control-label"></label>
+                <input asp-for="UserMain.Password" class="form-control" />
+                <span asp-validation-for="UserMain.Password" class="text-danger"></span>
+
+            </div>
+            <div class="form-group">
+                <input type="submit" value="编辑" class="btn btn-primary" />
+            </div>
+
+            <div class="form-group">
+                <input type="button" value="测试异步" id="testBtn" class="btn btn-warning" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="Index">返回主页</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+    <script type="text/javascript">
+        $(function () {
+            $("#testBtn").click(function () {
+                var url = "/usermains/Edit?handler=CreateTest";
+                var val = $("#UserName").val();
+                //$.post(url, { UserName: val }, function (data) {
+                //    console.log(data);
+                //});
+                $.ajax({
+                    type: "post",
+                    url: url,
+                    beforeSend: function (xhr) {
+                        xhr.setRequestHeader("XSRF-TOKEN",
+                            $('input:hidden[name="__RequestVerificationToken"]').val());
+                    },
+                    data: { UserName: val },
+                    success: function (data) {
+                        console.log(data);
+                    }
+                })
+            })
+        })
+    </script>
+}

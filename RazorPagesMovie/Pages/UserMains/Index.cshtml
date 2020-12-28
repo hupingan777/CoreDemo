@@ -1,0 +1,37 @@
+﻿@page
+@model RazorPagesMovie.Pages.UserMains.IndexModel
+@{
+    ViewData["Title"] = "用户列表";
+}
+<p>
+    <a asp-page="Create">创建新用户</a>
+</p>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>@Html.DisplayNameFor(x => x.UserMain[0].UserName)</th>
+            <th>@Html.DisplayNameFor(x => x.UserMain[0].UserLoginName)</th>
+            <th>@Html.DisplayNameFor(x => x.UserMain[0].Password)</th>
+            <th>@Html.DisplayNameFor(x => x.UserMain[0].CreateTime)</th>
+            <th>@Html.DisplayNameFor(x => x.UserMain[0].UpdateTime)</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.UserMain)
+        {
+        <tr>
+            <td>@Html.DisplayFor(x => item.UserName)</td>
+            <td>@Html.DisplayFor(x => item.UserLoginName)</td>
+            <td>@Html.DisplayFor(x => item.Password)</td>
+            <td>@Html.DisplayFor(x => item.CreateTime)</td>
+            <td>@Html.DisplayFor(x => item.UpdateTime)</td>
+            <td>
+                <a asp-page="Edit" asp-route-id="@item.Id">修改</a> |
+                <a asp-page="Detail" asp-route-id="@item.Id">详细信息</a> |
+                <a asp-page="Delete" asp-route-id="@item.Id">删除</a>
+            </td>
+        </tr>
+        }
+    </tbody>
+</table>

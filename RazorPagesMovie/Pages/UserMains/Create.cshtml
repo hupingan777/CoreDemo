@@ -1,0 +1,41 @@
+﻿@page
+@model RazorPagesMovie.Pages.UserMains.CreateModel
+@{
+}
+
+<h1>创建</h1>
+
+<h4>用户</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="UserMain.UserName" class="control-label"></label>
+                <input asp-for="UserMain.UserName" class="form-control" />
+                <span asp-validation-for="UserMain.UserName" class="text-danger"></span>
+
+                <label asp-for="UserMain.UserLoginName" class="control-label"></label>
+                <input asp-for="UserMain.UserLoginName" class="form-control" />
+                <span asp-validation-for="UserMain.UserLoginName" class="text-danger"></span>
+
+                <label asp-for="UserMain.Password" class="control-label"></label>
+                <input asp-for="UserMain.Password" class="form-control" />
+                <span asp-validation-for="UserMain.Password" class="text-danger"></span>
+
+            </div>
+            <div class="form-group">
+                <input type="submit" value="创建" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="Index">返回主页</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
