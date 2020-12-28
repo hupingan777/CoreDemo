@@ -2,6 +2,24 @@
 @model RazorPagesMovie.Pages.UserMains.EditModel
 @{
     ViewData["Title"] = "用户编辑";
+    
+}
+@functions{
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="handlerName">EditModel的方法名</param>
+    /// <returns></returns>
+    public string GetRequestUrl(string handlerName)
+    {
+        var requestModel = HttpContext.Request;
+        string result = $"/usermains/edit";//?handler={handlerName}
+        if (handlerName.Trim() != string.Empty)
+        {
+            result += $"?handler={handlerName}";
+        }
+        return result;
+    }
 }
 
 <h1>编辑</h1>
@@ -43,14 +61,13 @@
 
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
-    <script type="text/javascript">
+<script type="text/javascript">
         $(function () {
             $("#testBtn").click(function () {
-                var url = "/usermains/Edit?handler=CreateTest";
+                debugger;
+                var url = "@GetRequestUrl("CreateTest")";//  @Html.Raw(GetRequestUrl("CreateTest"))
                 var val = $("#UserName").val();
-                //$.post(url, { UserName: val }, function (data) {
-                //    console.log(data);
-                //});
+
                 $.ajax({
                     type: "post",
                     url: url,
@@ -65,5 +82,5 @@
                 })
             })
         })
-    </script>
+</script>
 }

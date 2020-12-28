@@ -44,9 +44,10 @@ namespace RazorPagesMovie.Pages.UserMains
         /// 具体操作可以参考这篇博客：https://www.jb51.net/article/133437.htm
         /// </summary>
         /// <returns></returns>
-        public IActionResult OnPostCreateTest(string UserName)
+        public async Task<IActionResult> OnPostCreateTest(string UserName)
         {
-            return  new JsonResult(new { name = "测试" });
+            var list = await _dbContext.UserMain.ToListAsync();
+            return new JsonResult(list);
         }
     }
 }
