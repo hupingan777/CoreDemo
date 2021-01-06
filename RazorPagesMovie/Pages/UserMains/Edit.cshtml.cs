@@ -22,7 +22,7 @@ namespace RazorPagesMovie.Pages.UserMains
         [BindProperty]
         public UserMain UserMain { get; set; }
 
-        public async Task<IActionResult> OnGetAsync(int? id)
+        public async Task<IActionResult> OnGetAsync(int? id,string userName)
         {
             if (id == null)
             {

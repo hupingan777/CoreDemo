@@ -3,11 +3,26 @@
 @{
     ViewData["Title"] = "用户列表";
 }
+@functions{
+    public async Task<string> TestAsync(string val)
+    {
+        await Task.Run(() =>
+        {
+
+        });
+        return val;
+    }
+
+    public T GenericTest<T>(T age)
+    {
+        return age;
+    }
+}
 <p>
     <a asp-page="Create">创建新用户</a>
 </p>
 
-<table class="table">
+<table class="table table-bordered">
     <thead>
         <tr>
             <th>@Html.DisplayNameFor(x => x.UserMain[0].UserName)</th>
@@ -15,23 +30,38 @@
             <th>@Html.DisplayNameFor(x => x.UserMain[0].Password)</th>
             <th>@Html.DisplayNameFor(x => x.UserMain[0].CreateTime)</th>
             <th>@Html.DisplayNameFor(x => x.UserMain[0].UpdateTime)</th>
+            <th>操作</th>
         </tr>
     </thead>
     <tbody>
         @foreach (var item in Model.UserMain)
         {
-        <tr>
-            <td>@Html.DisplayFor(x => item.UserName)</td>
-            <td>@Html.DisplayFor(x => item.UserLoginName)</td>
-            <td>@Html.DisplayFor(x => item.Password)</td>
-            <td>@Html.DisplayFor(x => item.CreateTime)</td>
-            <td>@Html.DisplayFor(x => item.UpdateTime)</td>
-            <td>
-                <a asp-page="Edit" asp-route-id="@item.Id">修改</a> |
-                <a asp-page="Detail" asp-route-id="@item.Id">详细信息</a> |
-                <a asp-page="Delete" asp-route-id="@item.Id">删除</a>
-            </td>
-        </tr>
+            <tr>
+                <td>@Html.DisplayFor(x => item.UserName)</td>
+                <td>@Html.DisplayFor(x => item.UserLoginName)</td>
+                <td>@Html.DisplayFor(x => item.Password)</td>
+                <td>@Html.DisplayFor(x => item.CreateTime)</td>
+                <td>@Html.DisplayFor(x => item.UpdateTime)</td>
+                <td>
+                    <!--跳转页面时传参，asp-route-参数名=""，如果有多个就写多个，如下所示   -->
+                    <a asp-page="Edit" asp-route-id="@item.Id" asp-route-userName="@item.UserName">修改</a> |
+                    <a asp-page="Detail" asp-route-id="@item.Id">详细信息</a> |
+                    <a asp-page="Delete" asp-route-id="@item.Id">删除</a>
+                </td>
+            </tr>
         }
     </tbody>
 </table>
+<p><text>    name @await TestAsync("张三")</text></p>
+<p>age@(GenericTest<int>(24))</p>
+<p>@("<span>你好，世界！</span>")</p>
+<p>@Html.Raw("<span>你好，世界！</span>")</p>
+
+@{
+    void RenderName(string name)
+    {
+        <p>Name: <strong>@name</strong></p>
+    }
+    RenderName("Mahatma Gandhi");
+    RenderName("Martin Luther King, Jr.");
+}

@@ -2,24 +2,23 @@
 @model RazorPagesMovie.Pages.UserMains.EditModel
 @{
     ViewData["Title"] = "用户编辑";
-    
 }
 @functions{
-    /// <summary>
-    /// 
-    /// </summary>
-    /// <param name="handlerName">EditModel的方法名</param>
-    /// <returns></returns>
-    public string GetRequestUrl(string handlerName)
-    {
-        var requestModel = HttpContext.Request;
-        string result = $"/usermains/edit";//?handler={handlerName}
-        if (handlerName.Trim() != string.Empty)
-        {
-            result += $"?handler={handlerName}";
-        }
-        return result;
-    }
+    ///// <summary>
+    ///// 
+    ///// </summary>
+    ///// <param name="handlerName">EditModel的方法名</param>
+    ///// <returns></returns>
+    //public string GetRequestUrl(string handlerName)
+    //{
+    //    var requestModel = HttpContext.Request.Path.Value;
+    //    string result = $"/usermains/edit";//?handler={handlerName}
+    //    if (handlerName.Trim() != string.Empty)
+    //    {
+    //        result += $"?handler={handlerName}";
+    //    }
+    //    return result;
+    //}
 }
 
 <h1>编辑</h1>
@@ -64,8 +63,7 @@
 <script type="text/javascript">
         $(function () {
             $("#testBtn").click(function () {
-                debugger;
-                var url = "@GetRequestUrl("CreateTest")";//  @Html.Raw(GetRequestUrl("CreateTest"))
+                var url = "@HttpHelper.GetRequestUrl(HttpContext,"CreateTest")";//  @Html.Raw(HttpHelper.GetRequestUrl(HttpContext, "CreateTest"))
                 var val = $("#UserName").val();
 
                 $.ajax({
