@@ -146,6 +146,12 @@ namespace RegularExpressionConsoleApp
                 Console.WriteLine($"总值：{result.Sum(x => x.KillValue).ToString("F2")}%");
             }
 
+            {
+                string pattern = @"^once";
+                string inputValue = "There once upon a time";
+                var result = GetMatchValue(pattern, inputValue);
+            }
+
             Console.ReadKey();
         }
 
